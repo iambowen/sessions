@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tech Radar - DevOps</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# Tech Radar Walkthrough         The DevOps Part
+
+???
+
+Notes for the _first_ slide!
+
+---
+layout: false
+template: center
+# Categories
+.right-column[
+## - Techniques √
+## - Tools   √
+## - Platform  √
+## - Language & Frameworks  X
+]
+
+---
+layout: false
+template: center
+# ?
+.right-column[
+## - Adopt
+## - Trail
+## - Access
+## - Hold
+]
+
+---
+# Techniques  -  Adopt
+.right-column[
+## - Focus on mean time to recovery
+
+## - Structured logging
+    - [Splunk](http://www.splunk.com/)
+    - [Graylog2](https://www.graylog2.org/)
+    - [LogStash](http://logstash.net/)
+]
+
+---
+#  Techniques  -  Trail
+
+## - Canary builds
+## - Partition infrastructure along team bounds  (production privileges management, easier for cloud)
+
+---
+#  Techniques  -  Access
+
+## - Machine image pipelines (start from a base image)
+## - Pace-layered Application Strategy
+    -  architecture should not be a one-size fits all approach.
+
+---
+#  Techniques  -  Hold
+
+## - Cloud lift and shift(need to rearchitecturing if moving to cloud)
+## - Microservice envy (don't rush)
+## - Programming in your CI/CD tool(don't do this)
+## - Separate DevOps team (need for a seperate delivery engineering team like PiXiu)
+
+---
+#  Tools  -  Adopt
+
+## - [Flyway](automate database migrations)
+## - Go CD
+
+---
+#  Tools  -  Trail
+
+## - [Boot2docker](http://boot2docker.io/)
+## - [Docker](http://docker.io)
+## - [Foreman](http://theforeman.org/) (lifecycle management tool for physical and virtual servers.)
+## - [Packer](http://packer.io)
+## - [SnapCI](http://snap-ci.com)
+
+---
+#  Tools  -  Access
+
+## - [Consul](https://consul.io/) (service discovery)
+## - Terraform (supports multiple cloud providers)
+
+
+---
+# Platforms  - Trail
+
+## - [DigitalOcean](http://digitalocean.com)
+
+---
+# Platforms  - Access
+
+## - [Mesos](http://mesos.apache.org/) (abstracts out underlying computing resources to make it easier to build massively scalable distributed systems.)
+## - [CoreOS](https://coreos.com)
+## - [MariaDB](https://mariadb.org/)
+## - [Netflix OSS Full Stack](http://netflix.github.io/#repo), e.g AsGuard, Chaos Monkey
+## - SDN
+
+--
+# DevOps Topics Arrangement
+
+## -
+
+    </textarea>
+    <script src="../js/remark.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
